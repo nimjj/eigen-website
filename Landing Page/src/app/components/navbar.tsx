@@ -7,7 +7,7 @@ const services = [
   { name: "Automations", desc: "Bespoke API scripts & workflows", to: "/services/automations" },
   { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "/services/cloud-infrastructure" },
   { name: "AI Orchestration", desc: "RAG pipelines & custom ML", to: "/services/ai-orchestration" },
-  { name: "CRM Integrations", desc: "Sync across your platforms", to: "#ecosystem" },
+  { name: "CRM Integrations", desc: "Sync across your platforms", to: "/services/crm-orchestration" },
 ];
 
 export function Navbar() {

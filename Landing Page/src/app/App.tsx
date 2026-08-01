@@ -4,6 +4,7 @@ import { HomePage } from "./pages/home/page";
 import { AIOrchestrationPage } from "./pages/ai-orchestration/page";
 import { AutomationsPage } from "./pages/automations/page";
 import { CloudInfrastructurePage } from "./pages/cloud-infrastructure/page";
+import { CrmOrchestrationPage } from "./pages/crm-orchestration/page";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/services/ai-orchestration" element={<AIOrchestrationPage />} />
         <Route path="/services/automations" element={<AutomationsPage />} />
         <Route path="/services/cloud-infrastructure" element={<CloudInfrastructurePage />} />
+        <Route path="/services/crm-orchestration" element={<CrmOrchestrationPage />} />
       </Route>
     </Routes>
   );
