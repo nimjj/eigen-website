@@ -33,7 +33,7 @@ export function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-1 sm:gap-2">
           <Link
-            to="/#about"
+            to="/about"
             className="hidden rounded-lg px-4 py-2 text-sm text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 sm:block"
           >
             About Us
