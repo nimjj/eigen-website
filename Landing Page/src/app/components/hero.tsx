@@ -5,14 +5,14 @@ export function Hero() {
     <section className="bg-white py-20 lg:py-28 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-left space-y-8 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-zinc-900">
-            <span className="animate-fade-slide-up">
-              Your Focus Belongs to{" "}
-              <span className="animate-bolt-expand inline-flex items-center -rotate-2 rounded-2xl bg-[var(--accent-yellow)] px-4 sm:px-6 py-1 pb-2.5 shadow-md mx-1 align-middle">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-zinc-900">
+            <span className="animate-fade-slide-up whitespace-nowrap inline-flex items-center flex-wrap sm:flex-nowrap gap-2">
+              <span>Your Focus Belongs to</span>
+              <span className="animate-bolt-expand inline-flex items-center -rotate-2 rounded-2xl bg-[var(--accent-yellow)] px-3.5 sm:px-5 py-0.5 sm:py-1 pb-1.5 sm:pb-2 shadow-md align-middle">
                 <span className="rotate-2 inline-block">Growth.</span>
               </span>
             </span>
-            <span className="block mt-4 text-3xl font-bold text-zinc-700 sm:text-4xl lg:text-5xl">
+            <span className="block mt-4 text-2xl font-bold text-zinc-700 sm:text-3xl lg:text-4xl">
               Not Infrastructure.
             </span>
           </h1>
