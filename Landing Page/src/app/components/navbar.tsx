@@ -8,6 +8,7 @@ const services = [
   { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "/services/cloud-infrastructure" },
   { name: "AI Orchestration", desc: "RAG pipelines & custom ML", to: "/services/ai-orchestration" },
   { name: "CRM Integrations", desc: "Sync across your platforms", to: "/services/crm-orchestration" },
+  { name: "Data Engineering", desc: "Lakehouses, ETL & ML models", to: "/services/data-engineering" },
 ];
 
 export function Navbar() {
