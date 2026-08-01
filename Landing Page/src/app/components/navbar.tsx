@@ -36,7 +36,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoLight} alt="eigen." className="h-8 sm:h-10 w-auto object-contain mix-blend-multiply" />
+          <img src={logoLight} alt="eigen." className="h-10 sm:h-12 w-auto object-contain mix-blend-multiply" />
         </Link>
 
         {/* Right side */}
