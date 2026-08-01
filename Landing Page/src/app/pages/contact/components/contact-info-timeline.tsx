@@ -15,8 +15,8 @@ export function ContactInfoTimeline() {
             </div>
             <div>
               <span className="block text-xs text-zinc-500 uppercase tracking-wider mb-0.5">Direct Email</span>
-              <a href="mailto:hello@eigen.lk" className="font-mono text-white text-base hover:text-[var(--accent-yellow)] transition-colors">
-                hello@eigen.lk
+              <a href="mailto:sales@ei-gen.teck" className="font-mono text-white text-base hover:text-[var(--accent-yellow)] transition-colors">
+                sales@ei-gen.teck
               </a>
             </div>
           </div>
