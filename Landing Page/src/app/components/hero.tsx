@@ -6,11 +6,11 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-left space-y-8 max-w-5xl">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-zinc-900">
-            <span className="inline-block animate-fade-slide-up">
-              Your Focus Belongs to
-            </span>{" "}
-            <span className="animate-bolt-expand inline-flex items-center -rotate-2 rounded-2xl bg-[var(--accent-yellow)] px-4 sm:px-6 py-1 pb-2.5 shadow-md mx-1 align-middle">
-              <span className="rotate-2 inline-block">Growth.</span>
+            <span className="animate-fade-slide-up">
+              Your Focus Belongs to{" "}
+              <span className="animate-bolt-expand inline-flex items-center -rotate-2 rounded-2xl bg-[var(--accent-yellow)] px-4 sm:px-6 py-1 pb-2.5 shadow-md mx-1 align-middle">
+                <span className="rotate-2 inline-block">Growth.</span>
+              </span>
             </span>
             <span className="block mt-4 text-3xl font-bold text-zinc-700 sm:text-4xl lg:text-5xl">
               Not Infrastructure.
