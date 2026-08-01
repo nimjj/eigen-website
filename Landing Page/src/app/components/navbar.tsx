@@ -1,14 +1,22 @@
 import { useState, useRef, useEffect } from "react";
-import { ChevronDown, Zap } from "lucide-react";
+import { ChevronDown, Workflow, Cloud, Cpu, RefreshCw, Database } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router";
 import logoLight from "../../imports/3_Fotor.png";
 
-const services = [
-  { name: "Automations", desc: "Bespoke API scripts & workflows", to: "/services/automations" },
-  { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "/services/cloud-infrastructure" },
-  { name: "AI Orchestration", desc: "RAG pipelines & custom ML", to: "/services/ai-orchestration" },
-  { name: "CRM Integrations", desc: "Sync across your platforms", to: "/services/crm-orchestration" },
-  { name: "Data Engineering", desc: "Lakehouses, ETL & ML models", to: "/services/data-engineering" },
+type ServiceItem = {
+  name: string;
+  desc: string;
+  to: string;
+  icon: LucideIcon;
+};
+
+const services: ServiceItem[] = [
+  { name: "Automations", desc: "Bespoke API scripts & workflows", to: "/services/automations", icon: Workflow },
+  { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "/services/cloud-infrastructure", icon: Cloud },
+  { name: "AI Orchestration", desc: "RAG pipelines & custom ML", to: "/services/ai-orchestration", icon: Cpu },
+  { name: "CRM Integrations", desc: "Sync across your platforms", to: "/services/crm-orchestration", icon: RefreshCw },
+  { name: "Data Engineering", desc: "Lakehouses, ETL & ML models", to: "/services/data-engineering", icon: Database },
 ];
 
 export function Navbar() {
@@ -54,22 +62,25 @@ export function Navbar() {
 
             {open && (
               <div className="absolute right-0 mt-2 w-72 overflow-hidden rounded-2xl border border-zinc-200 bg-white p-2 shadow-xl shadow-zinc-900/5">
-                {services.map((s) => (
-                  <Link
-                    key={s.name}
-                    to={s.to}
-                    onClick={() => setOpen(false)}
-                    className="group flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-zinc-50"
-                  >
-                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-yellow)]/20 text-zinc-900 transition-colors group-hover:bg-[var(--accent-yellow)]">
-                      <Zap className="h-4 w-4" />
-                    </span>
-                    <span>
-                      <span className="block text-sm text-zinc-900">{s.name}</span>
-                      <span className="block text-xs text-zinc-500">{s.desc}</span>
-                    </span>
-                  </Link>
-                ))}
+                {services.map((s) => {
+                  const Icon = s.icon;
+                  return (
+                    <Link
+                      key={s.name}
+                      to={s.to}
+                      onClick={() => setOpen(false)}
+                      className="group flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-zinc-50"
+                    >
+                      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-yellow)]/20 text-zinc-900 transition-colors group-hover:bg-[var(--accent-yellow)]">
+                        <Icon className="h-4 w-4 text-zinc-900" />
+                      </span>
+                      <span>
+                        <span className="block text-sm font-medium text-zinc-900">{s.name}</span>
+                        <span className="block text-xs text-zinc-500">{s.desc}</span>
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             )}
           </div>
