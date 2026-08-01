@@ -1,4 +1,4 @@
-import { ArrowRight, Compass } from "lucide-react";
+import { ArrowRight, Target } from "lucide-react";
 
 export function Hero() {
   return (
@@ -10,25 +10,25 @@ export function Hero() {
 
       <div className="mx-auto max-w-5xl px-6 text-center lg:px-8 relative z-10">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-800/60 px-4 py-1.5 text-xs backdrop-blur-sm mb-8">
-          <Compass className="h-3.5 w-3.5 text-[var(--accent-yellow)]" />
-          <span className="font-semibold uppercase tracking-widest text-[var(--accent-yellow)]">About eigen</span>
+          <Target className="h-3.5 w-3.5 text-[var(--accent-yellow)]" />
+          <span className="font-semibold uppercase tracking-widest text-[var(--accent-yellow)]">OUR PURPOSE</span>
         </div>
 
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl leading-tight">
-          Engineering{" "}
-          <span className="text-[var(--accent-yellow)]">Autonomous Growth.</span>
+          Demystifying Technology.{" "}
+          <span className="text-[var(--accent-yellow)]">Accelerating Growth.</span>
         </h1>
 
         <p className="mx-auto mt-8 max-w-3xl text-lg sm:text-xl leading-relaxed text-zinc-400">
-          We eliminate enterprise bloat and manual bottlenecks through pragmatic, high-velocity technical architecture.
+          We bridge the gap between complex engineering and business vision. We handle the heavy technical architecture so you can focus entirely on achieving your business goals without tech bottlenecks or jargon.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#audit"
+            href="#capabilities"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-8 py-4 text-base font-bold text-zinc-900 shadow-lg shadow-yellow-500/10 transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 sm:w-auto"
           >
-            Book a System Audit
+            Explore Our Capabilities
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
           </a>
         </div>
