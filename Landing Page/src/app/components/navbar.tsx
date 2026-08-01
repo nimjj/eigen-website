@@ -74,14 +74,14 @@ export function Navbar() {
           </div>
 
           <Link
-            to="/#contact"
+            to="/contact"
             className="hidden rounded-lg px-4 py-2 text-sm text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 sm:block"
           >
             Contact Us
           </Link>
 
           <Link
-            to="/#contact"
+            to="/contact"
             className="ml-2 rounded-lg bg-[var(--accent-yellow)] px-4 py-2 text-sm text-zinc-900 shadow-sm transition-colors hover:bg-[var(--accent-yellow-hover)]"
           >
             Get Started
