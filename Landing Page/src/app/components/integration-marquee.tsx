@@ -1,24 +1,32 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import microsoftTeamsImg from "../../imports/microsoft_teams.webp";
+import excelImg from "../../imports/excel.jpeg";
+import mondayImg from "../../imports/monday.png";
+import pipedriveImg from "../../imports/pipedrive.avif";
+import salesforceImg from "../../imports/salesforce.webp";
+import slackImg from "../../imports/slack.jpeg";
+import trelloImg from "../../imports/trello_logo.png";
+import twilioImg from "../../imports/twilio_logo.jpeg";
 
 // slug maps to the Simple Icons CDN (https://simpleicons.org) for official
-// brand SVG marks in the brand's color.
-type Integration = { name: string; slug: string };
+// brand SVG marks in the brand's color. If src is provided, it uses the local image.
+type Integration = { name: string; slug?: string; src?: string };
 
 const integrations: Integration[] = [
   { name: "Airtable", slug: "airtable" },
   { name: "Notion", slug: "notion" },
   { name: "Google Drive", slug: "googledrive" },
-  { name: "Microsoft Excel", slug: "microsoftexcel" },
-  { name: "Salesforce", slug: "salesforce" },
+  { name: "Microsoft Excel", src: excelImg },
+  { name: "Salesforce", src: salesforceImg },
   { name: "HubSpot", slug: "hubspot" },
-  { name: "Slack", slug: "slack" },
-  { name: "Microsoft Teams", slug: "microsoftteams" },
+  { name: "Slack", src: slackImg },
+  { name: "Microsoft Teams", src: microsoftTeamsImg },
   { name: "Typeform", slug: "typeform" },
   { name: "Intercom", slug: "intercom" },
   { name: "Gmail", slug: "gmail" },
   { name: "Google Sheets", slug: "googlesheets" },
   { name: "Zoom", slug: "zoom" },
-  { name: "Monday.com", slug: "mondaydotcom" },
+  { name: "Monday.com", src: mondayImg },
   { name: "ClickUp", slug: "clickup" },
   { name: "Jira", slug: "jira" },
   { name: "Mailchimp", slug: "mailchimp" },
@@ -26,27 +34,28 @@ const integrations: Integration[] = [
   { name: "Stripe", slug: "stripe" },
   { name: "QuickBooks", slug: "quickbooks" },
   { name: "Asana", slug: "asana" },
-  { name: "Pipedrive", slug: "pipedrive" },
+  { name: "Pipedrive", src: pipedriveImg },
   { name: "Zoho CRM", slug: "zoho" },
   { name: "GitHub", slug: "github" },
-  { name: "Twilio", slug: "twilio" },
+  { name: "Twilio", src: twilioImg },
   { name: "Figma", slug: "figma" },
   { name: "PayPal", slug: "paypal" },
   { name: "Shopify", slug: "shopify" },
   { name: "Discord", slug: "discord" },
-  { name: "Trello", slug: "discord" }, // keeping some random ones to fill 3 rows
-  { name: "Dropbox", slug: "trello" },
+  { name: "Trello", src: trelloImg },
+  { name: "Dropbox", slug: "dropbox" },
   { name: "Linear", slug: "linear" },
   { name: "Vercel", slug: "vercel" },
 ];
 
-function Card({ name, slug }: Integration) {
+function Card({ name, slug, src }: Integration) {
+  const imageSrc = src || `https://cdn.simpleicons.org/${slug}`;
   return (
     <div className="group mx-8 flex shrink-0 items-center gap-3.5 py-4">
       <ImageWithFallback
-        src={`https://cdn.simpleicons.org/${slug}`}
+        src={imageSrc}
         alt={`${name} logo`}
-        className="h-7 w-7 object-contain grayscale transition-all duration-200 group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+        className="h-7 w-7 object-contain grayscale transition-all duration-200 group-hover:grayscale-0 opacity-70 group-hover:opacity-100 mix-blend-multiply"
       />
       <span className="text-base font-medium tracking-tight text-zinc-500 transition-colors duration-200 group-hover:text-zinc-900">{name}</span>
     </div>
@@ -59,7 +68,7 @@ function Row({ items, reverse }: { items: Integration[]; reverse?: boolean }) {
     <div className="flex w-max">
       <div className={`flex ${reverse ? "animate-marquee-reverse" : "animate-marquee"}`}>
         {doubled.map((it, i) => (
-          <Card key={`${it.name}-${i}`} name={it.name} slug={it.slug} />
+          <Card key={`${it.name}-${i}`} name={it.name} slug={it.slug} src={it.src} />
         ))}
       </div>
     </div>
