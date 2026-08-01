@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export function CTABlock() {
   return (
-    <section id="audit" className="bg-zinc-900 pb-24 pt-10">
+    <section id="audit" className="bg-zinc-900 pb-24 pt-10 border-t border-zinc-800/80">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="group relative overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-800/50 px-8 py-20 text-center shadow-xl transition-all duration-500 hover:border-zinc-700">
           <div
@@ -10,17 +10,17 @@ export function CTABlock() {
             style={{ background: "var(--accent-yellow)" }}
           />
           <h2 className="relative mx-auto max-w-3xl text-3xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
-            Radical Cost-Efficiency Meets Sovereign Intelligence.
+            Your Cloud Should Scale With You, Not Against You.
           </h2>
           <p className="relative mx-auto mt-6 max-w-xl text-lg text-zinc-400">
-            Stop overpaying for generic AI that doesn't understand your business. Let's architect a solution that drives actual ROI.
+            Let our senior engineers audit your current cloud architecture and deliver a concrete optimization roadmap.
           </p>
           <div className="relative mt-10">
             <a
               href="#audit"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 font-medium text-zinc-900 shadow-lg transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 hover:shadow-yellow-500/20"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 font-bold text-zinc-900 shadow-lg transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 hover:shadow-yellow-500/20"
             >
-              Review AI architecture
+              Review Cloud Infrastructure
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
           </div>

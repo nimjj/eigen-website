@@ -32,9 +32,9 @@ export function BentoGrid() {
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-12">
           {/* AI Orchestration — massive hero */}
-          <article className="rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-8">
+          <article className="group rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <Cpu className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-2xl leading-snug text-zinc-900">
@@ -54,13 +54,13 @@ export function BentoGrid() {
           </article>
 
           {/* Agentic Automations — tall hero */}
-          <article className="rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-4">
+          <article className="group rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <Workflow className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl leading-snug text-zinc-900">
-                Autonomous AI Agents
+                AI & RPA automations
               </h3>
               <p className="mt-3 text-base leading-relaxed text-zinc-600">
                 Turn fragmented, manual tasks into self-executing workflows. We
@@ -75,9 +75,9 @@ export function BentoGrid() {
           </article>
 
           {/* Cloud Architecture */}
-          <article className="flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-6 lg:col-span-5 min-h-[280px]">
+          <article className="group flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-6 lg:col-span-5 min-h-[280px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-100">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-100 transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <Cloud className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl text-zinc-900">Cost-Optimized Cloud</h3>
@@ -90,9 +90,9 @@ export function BentoGrid() {
           </article>
 
           {/* Data Warehousing */}
-          <article className="flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-6 lg:col-span-4 min-h-[280px]">
+          <article className="group flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 md:col-span-6 lg:col-span-4 min-h-[280px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-100">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-100 transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <Database className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl text-zinc-900">Warehousing & Analytics</h3>
@@ -104,9 +104,9 @@ export function BentoGrid() {
           </article>
 
           {/* CRM Audits — compact dark accent square */}
-          <article className="flex flex-col justify-between rounded-3xl border border-zinc-800 bg-zinc-900 p-8 md:col-span-12 lg:col-span-3 min-h-[280px]">
+          <article className="group flex flex-col justify-between rounded-3xl border border-zinc-800 bg-zinc-900 p-8 md:col-span-12 lg:col-span-3 min-h-[280px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-yellow-500/10 hover:border-zinc-700">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
                 <RefreshCw className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl text-white">CRM Orchestration</h3>

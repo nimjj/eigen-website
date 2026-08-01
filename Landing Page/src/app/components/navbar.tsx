@@ -4,8 +4,8 @@ import { Link } from "react-router";
 import logoLight from "../../imports/3_Fotor.png";
 
 const services = [
-  { name: "Automations", desc: "Bespoke API scripts & workflows", to: "#ecosystem" },
-  { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "#ecosystem" },
+  { name: "Automations", desc: "Bespoke API scripts & workflows", to: "/services/automations" },
+  { name: "Cloud Architecture", desc: "Secure, scalable infrastructure", to: "/services/cloud-infrastructure" },
   { name: "AI Orchestration", desc: "RAG pipelines & custom ML", to: "/services/ai-orchestration" },
   { name: "CRM Integrations", desc: "Sync across your platforms", to: "#ecosystem" },
 ];
@@ -27,7 +27,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoLight} alt="eigen." className="h-12 sm:h-16 w-auto object-contain mix-blend-multiply" />
+          <img src={logoLight} alt="eigen." className="h-8 sm:h-10 w-auto object-contain mix-blend-multiply" />
         </Link>
 
         {/* Right side */}

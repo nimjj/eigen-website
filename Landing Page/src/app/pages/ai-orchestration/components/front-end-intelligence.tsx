@@ -18,8 +18,8 @@ export function FrontEndIntelligence() {
 
           {/* Right Column - Scrolling Cards */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)]">
+            <div className="group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:ring-zinc-300">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)] transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <Shield className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl font-medium text-zinc-900">Secure RAG Chatbots</h3>
@@ -28,8 +28,8 @@ export function FrontEndIntelligence() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)]">
+            <div className="group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:ring-zinc-300">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)] transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <MessageSquare className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl font-medium text-zinc-900">Sentiment & Review Monitoring</h3>
@@ -38,8 +38,8 @@ export function FrontEndIntelligence() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)]">
+            <div className="group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:ring-zinc-300">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)] transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <AlertTriangle className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl font-medium text-zinc-900">Proactive Complaint Detection</h3>
@@ -48,8 +48,8 @@ export function FrontEndIntelligence() {
               </p>
             </div>
             
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)]">
+            <div className="group rounded-3xl bg-white p-8 shadow-sm ring-1 ring-zinc-200/50 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-zinc-900/5 hover:ring-zinc-300">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent-yellow)]/20 text-[var(--accent-yellow-hover)] transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)]">
                 <Paperclip className="h-6 w-6 text-zinc-900" />
               </div>
               <h3 className="mt-6 text-xl font-medium text-zinc-900">Universal MCP Connectors</h3>

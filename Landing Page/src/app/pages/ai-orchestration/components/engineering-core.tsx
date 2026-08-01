@@ -2,7 +2,7 @@ import { Cpu, Terminal, Layers } from "lucide-react";
 
 export function EngineeringCore() {
   return (
-    <section className="bg-zinc-900 py-24 sm:py-32">
+    <section className="bg-zinc-900 pt-24 pb-8 sm:pt-32 sm:pb-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 text-center lg:text-left">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
@@ -16,8 +16,8 @@ export function EngineeringCore() {
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           
           {/* Card 1 */}
-          <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all hover:bg-zinc-800">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700">
+          <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all duration-300 hover:bg-zinc-800 hover:-translate-y-1.5 hover:border-[var(--accent-yellow)]/40 hover:shadow-xl hover:shadow-yellow-500/5">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)] group-hover:text-zinc-900">
               <Cpu className="h-6 w-6" />
             </div>
             <div className="mt-8">
@@ -29,8 +29,8 @@ export function EngineeringCore() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all hover:bg-zinc-800">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700">
+          <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all duration-300 hover:bg-zinc-800 hover:-translate-y-1.5 hover:border-[var(--accent-yellow)]/40 hover:shadow-xl hover:shadow-yellow-500/5">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)] group-hover:text-zinc-900">
               <Terminal className="h-6 w-6" />
             </div>
             <div className="mt-8">
@@ -42,8 +42,8 @@ export function EngineeringCore() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all hover:bg-zinc-800">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700">
+          <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-zinc-800/50 border border-zinc-700/50 p-8 transition-all duration-300 hover:bg-zinc-800 hover:-translate-y-1.5 hover:border-[var(--accent-yellow)]/40 hover:shadow-xl hover:shadow-yellow-500/5">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 text-[var(--accent-yellow)] ring-1 ring-zinc-700 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[var(--accent-yellow)] group-hover:text-zinc-900">
               <Layers className="h-6 w-6" />
             </div>
             <div className="mt-8">

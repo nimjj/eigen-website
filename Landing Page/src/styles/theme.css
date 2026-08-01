@@ -142,6 +142,44 @@
   animation: marquee-reverse 45s linear infinite;
 }
 
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bolt-reveal-expand {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 80% 0 0 rounded 1rem);
+    transform: scale(0.5);
+  }
+  35% {
+    opacity: 1;
+    clip-path: inset(0 75% 0 0 rounded 1rem);
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 rounded 1rem);
+    transform: scale(1);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fade-slide-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-bolt-expand {
+  opacity: 0;
+  animation: bolt-reveal-expand 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
