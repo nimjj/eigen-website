@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 
 // Paste your Web3Forms Access Key here (get a free key at https://web3forms.com)
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "868e3de1-9986-4a82-ae0d-c055b756215b";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
