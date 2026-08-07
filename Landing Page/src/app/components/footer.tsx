@@ -52,7 +52,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-800/60 pt-6 text-xs text-zinc-600 sm:flex-row">
           <span>© 2026 eigen.tech. All rights reserved.</span>
-          <span>Demystifying Technology. Accelerating Growth.</span>
+          <span>Automation Made Human.</span>
         </div>
       </div>
     </footer>
