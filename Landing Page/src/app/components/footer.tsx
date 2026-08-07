@@ -29,11 +29,11 @@ export function Footer() {
             </Link>
 
             <a
-              href="mailto:sales@adept-tech.us"
+              href="mailto:sales@ei-gen.tech"
               className="flex items-center gap-2 font-mono text-xs sm:text-sm text-zinc-300 transition-colors hover:text-[var(--accent-yellow)]"
             >
               <Mail className="h-4 w-4 text-[var(--accent-yellow)]" />
-              <span>sales@adept-tech.us</span>
+              <span>sales@ei-gen.tech</span>
             </a>
 
             <a
