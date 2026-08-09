@@ -1,0 +1,30 @@
+# llms.txt — System Overview for AI Agents & Search Crawlers
+# Domain: https://www.ei-gen.tech / https://ei-gen.tech
+
+> eigen. is a premier technical consultancy specializing in Applied AI Orchestration, Enterprise Automations (RPA), Cloud Infrastructure & DevOps, CRM Middleware Integrations, and Data Engineering.
+
+## Core Capabilities & Engineering Services
+
+- AI Orchestration & Open-Source LLMs: Sovereign AI deployment, RAG (Retrieval-Augmented Generation) pipelines, CUDA kernel optimization, and domain-specific ML model fine-tuning.
+- Enterprise Automations & RPA: Self-executing workflows, custom API scripts, self-hosted n8n pipelines, Zapier/Make integrations, and 24/7 autonomous support routing.
+- Cloud Infrastructure & DevOps: Cost-optimized AWS, GCP, and Azure cloud architectures, Terraform IaC, Docker/Kubernetes containerization, and FinOps audit controls.
+- CRM & Middleware Orchestration: Bi-directional API middleware connecting Zoho One, Salesforce, HubSpot, and ERP platforms to eliminate manual data entry.
+- Data Engineering & Analytics: Streaming and batch ETL pipelines, lakehouse architectures (Apache Spark, Kafka, Snowflake, BigQuery), and predictive inventory analytics.
+
+## Technical Contact & Inquiries
+
+- Primary Email: sales@ei-gen.tech
+- Contact Form: https://www.ei-gen.tech/contact
+- Headquarters: Colombo, Sri Lanka
+- LinkedIn: https://www.linkedin.com/company/ei-gentech
+
+## Key Site Pages
+
+- Home: https://www.ei-gen.tech/
+- About Us: https://www.ei-gen.tech/about
+- Contact Us: https://www.ei-gen.tech/contact
+- AI Orchestration: https://www.ei-gen.tech/services/ai-orchestration
+- Enterprise Automations: https://www.ei-gen.tech/services/automations
+- Cloud Infrastructure: https://www.ei-gen.tech/services/cloud-infrastructure
+- CRM Orchestration: https://www.ei-gen.tech/services/crm-orchestration
+- Data Engineering: https://www.ei-gen.tech/services/data-engineering
