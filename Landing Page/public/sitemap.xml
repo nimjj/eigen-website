@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Page -->
   <url>
-    <loc>https://ei-gen.tech/</loc>
+    <loc>https://www.ei-gen.tech/</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
   <!-- About Us -->
   <url>
-    <loc>https://ei-gen.tech/about</loc>
+    <loc>https://www.ei-gen.tech/about</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -18,7 +18,7 @@
 
   <!-- Contact Us -->
   <url>
-    <loc>https://ei-gen.tech/contact</loc>
+    <loc>https://www.ei-gen.tech/contact</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -26,7 +26,7 @@
 
   <!-- Service: AI Orchestration -->
   <url>
-    <loc>https://ei-gen.tech/services/ai-orchestration</loc>
+    <loc>https://www.ei-gen.tech/services/ai-orchestration</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -34,7 +34,7 @@
 
   <!-- Service: Enterprise Automations & RPA -->
   <url>
-    <loc>https://ei-gen.tech/services/automations</loc>
+    <loc>https://www.ei-gen.tech/services/automations</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -42,7 +42,7 @@
 
   <!-- Service: Cloud Infrastructure & DevOps -->
   <url>
-    <loc>https://ei-gen.tech/services/cloud-infrastructure</loc>
+    <loc>https://www.ei-gen.tech/services/cloud-infrastructure</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -50,7 +50,7 @@
 
   <!-- Service: CRM Orchestration -->
   <url>
-    <loc>https://ei-gen.tech/services/crm-orchestration</loc>
+    <loc>https://www.ei-gen.tech/services/crm-orchestration</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -58,7 +58,7 @@
 
   <!-- Service: Data Engineering & Analytics -->
   <url>
-    <loc>https://ei-gen.tech/services/data-engineering</loc>
+    <loc>https://www.ei-gen.tech/services/data-engineering</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
