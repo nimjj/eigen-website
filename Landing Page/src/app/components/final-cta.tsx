@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
@@ -14,13 +15,13 @@ export function FinalCTA() {
             you.
           </h2>
           <div className="relative mt-10">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 text-zinc-900 shadow-lg transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 hover:shadow-yellow-500/20"
             >
               Talk to an Engineer
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

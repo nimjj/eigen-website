@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
 export function CTABlock() {
@@ -16,13 +17,13 @@ export function CTABlock() {
             Stop overpaying for generic AI that doesn't understand your business. Let's architect a solution that drives actual ROI.
           </p>
           <div className="relative mt-10">
-            <a
-              href="#audit"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 font-medium text-zinc-900 shadow-lg transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 hover:shadow-yellow-500/20"
             >
               Review AI architecture
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
-import { ArrowRight, Bot, Cpu } from "lucide-react";
+import { Link } from "react-router";
+import { ArrowRight, Workflow } from "lucide-react";
 
 export function Hero() {
   return (
@@ -11,7 +12,7 @@ export function Hero() {
 
       <div className="mx-auto max-w-5xl px-6 text-center lg:px-8 relative z-10">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-800/60 px-4 py-1.5 text-xs text-zinc-300 mb-8 backdrop-blur-sm">
-          <Bot className="h-3.5 w-3.5 text-[var(--accent-yellow)]" />
+          <Workflow className="h-3.5 w-3.5 text-[var(--accent-yellow)]" />
           <span className="font-medium tracking-wide">Enterprise Automations & RPA</span>
         </div>
 
@@ -27,13 +28,13 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#audit"
+          <Link
+            to="/contact"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-8 py-4 text-base font-bold text-zinc-900 shadow-lg shadow-yellow-500/10 transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105 sm:w-auto"
           >
             Review Automation Architecture
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

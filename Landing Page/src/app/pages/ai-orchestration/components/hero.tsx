@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -15,13 +16,13 @@ export function Hero() {
           We build sovereign, custom AI architectures that optimize workflows and eliminate enterprise bloat—moving far beyond basic API wrappers.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a
-            href="#audit"
+          <Link
+            to="/contact"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 text-sm font-medium text-zinc-900 shadow-sm transition-all hover:bg-[var(--accent-yellow-hover)]"
           >
             Review AI architecture
             <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -22,13 +23,13 @@ export function Hero() {
           </p>
 
           <div className="pt-2">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-8 py-4 text-base font-bold text-zinc-900 shadow-lg shadow-yellow-500/10 transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105"
             >
               Ready to feel the energy?
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
