@@ -7,7 +7,7 @@ export function ContactPage() {
   return (
     <section id="contact" className="bg-zinc-900 py-24 sm:py-32 relative overflow-hidden">
       <SEO
-        title="Contact Us — ei-gen.tech"
+        title="Contact Us — eigen."
         description="Initiate an engineer-led architecture review for your enterprise AI, cloud, automation, or data stack."
         canonical="https://ei-gen.tech/contact"
       />

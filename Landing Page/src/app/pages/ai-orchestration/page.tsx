@@ -10,7 +10,7 @@ export function AIOrchestrationPage() {
   return (
     <>
       <SEO
-        title="AI Orchestration & LLM Solutions — ei-gen.tech"
+        title="AI Orchestration & LLM Solutions — eigen."
         description="Sovereign AI architectures, RAG pipelines, CUDA kernel optimization, and custom ML fine-tuning."
         canonical="https://ei-gen.tech/services/ai-orchestration"
       />

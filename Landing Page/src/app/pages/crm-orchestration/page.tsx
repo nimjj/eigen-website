@@ -11,7 +11,7 @@ export function CrmOrchestrationPage() {
   return (
     <>
       <SEO
-        title="CRM & Middleware Orchestration — ei-gen.tech"
+        title="CRM & Middleware Orchestration — eigen."
         description="Bi-directional API middleware connecting Zoho One, Salesforce, HubSpot, and ERP platforms."
         canonical="https://ei-gen.tech/services/crm-orchestration"
       />

@@ -8,7 +8,7 @@ export function AboutPage() {
   return (
     <>
       <SEO
-        title="About Us — ei-gen.tech"
+        title="About Us — eigen."
         description="Learn about our purpose, mission, and pragmatic engineering approach to enterprise AI, cloud architecture, and automation."
         canonical="https://ei-gen.tech/about"
       />

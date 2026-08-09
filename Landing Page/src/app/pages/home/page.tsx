@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <>
       <SEO
-        title="ei-gen.tech — Applied AI Orchestration & Cloud Infrastructure"
+        title="eigen. — Applied AI Orchestration & Cloud Infrastructure"
         description="We engineer custom AI orchestration, robust cloud infrastructure & seamless platform integrations so your tools work for you, not against you."
         canonical="https://ei-gen.tech/"
       />
