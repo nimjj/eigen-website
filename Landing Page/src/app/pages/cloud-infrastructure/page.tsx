@@ -10,7 +10,7 @@ export function CloudInfrastructurePage() {
   return (
     <>
       <SEO
-        title="Cloud Infrastructure & DevOps — eigen.tech"
+        title="Cloud Infrastructure & DevOps — ei-gen.tech"
         description="Hyper-secure AWS, GCP, and Azure cloud environments engineered for peak performance and radical FinOps cost efficiency."
         canonical="https://ei-gen.tech/services/cloud-infrastructure"
       />

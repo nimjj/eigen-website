@@ -10,7 +10,7 @@ export function DataEngineeringPage() {
   return (
     <>
       <SEO
-        title="Data Engineering & Analytics — eigen.tech"
+        title="Data Engineering & Analytics — ei-gen.tech"
         description="High-throughput streaming & batch data pipelines, lakehouses, Apache Spark, Kafka, and predictive intelligence."
         canonical="https://ei-gen.tech/services/data-engineering"
       />
