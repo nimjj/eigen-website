@@ -1,0 +1,8 @@
+{
+  "name": "eigen-website-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd \"Landing Page\" && npm install && npm run build"
+  }
+}
