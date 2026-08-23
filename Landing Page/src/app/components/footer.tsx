@@ -12,10 +12,12 @@ export function Footer() {
           
           {/* Brand Column — 2 cols */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <Link to="/" className="flex items-center group">
+            <Link to="/" className="flex items-center group" aria-label="eigen. home">
               <img
                 src={logoDark}
                 alt="eigen."
+                width={160}
+                height={80}
                 className="h-20 sm:h-24 md:h-28 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
               />
             </Link>
@@ -95,9 +97,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#ecosystem" className="text-sm text-white/60 hover:text-white transition-colors">
+                <Link to="/#ecosystem" className="text-sm text-white/60 hover:text-white transition-colors">
                   Ecosystem
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section id="contact" className="py-24 sm:py-36 px-6 lg:px-10 bg-[#FAF9F5] relative overflow-hidden">
+    <section id="cta-section" className="py-24 sm:py-36 px-6 lg:px-10 bg-[#FAF9F5] relative overflow-hidden">
       
       {/* Radiant Yellow Glow Background */}
       <div 

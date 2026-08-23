@@ -1,7 +1,9 @@
 import { SEO } from "../../components/seo";
 import { Hero } from "./components/hero";
 import { MissionVision } from "./components/mission-vision";
+import { CorePhilosophy } from "./components/core-philosophy";
 import { CapabilitiesGrid } from "./components/capabilities-grid";
+import { LeadershipExpertise } from "./components/leadership-expertise";
 import { CTASection } from "./components/cta-section";
 
 export function AboutPage() {
@@ -14,8 +16,11 @@ export function AboutPage() {
       />
       <Hero />
       <MissionVision />
+      <CorePhilosophy />
       <CapabilitiesGrid />
+      <LeadershipExpertise />
       <CTASection />
     </>
   );
 }
+
