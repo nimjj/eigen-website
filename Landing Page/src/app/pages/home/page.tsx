@@ -6,7 +6,6 @@ import { BentoGrid } from "../../components/bento-grid";
 import { SolutionsShowcase } from "../../components/solutions-showcase";
 import { TechStack } from "../../components/tech-stack";
 import { Testimonial } from "../../components/testimonial";
-import { FinalCTA } from "../../components/final-cta";
 
 export function HomePage() {
   return (
@@ -23,9 +22,9 @@ export function HomePage() {
       <SolutionsShowcase />
       <TechStack />
       <Testimonial />
-      <FinalCTA />
     </>
   );
 }
+
 
 
