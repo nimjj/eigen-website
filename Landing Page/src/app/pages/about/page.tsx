@@ -4,7 +4,6 @@ import { MissionVision } from "./components/mission-vision";
 import { CorePhilosophy } from "./components/core-philosophy";
 import { CapabilitiesGrid } from "./components/capabilities-grid";
 import { LeadershipExpertise } from "./components/leadership-expertise";
-import { CTASection } from "./components/cta-section";
 
 export function AboutPage() {
   return (
@@ -19,7 +18,6 @@ export function AboutPage() {
       <CorePhilosophy />
       <CapabilitiesGrid />
       <LeadershipExpertise />
-      <CTASection />
     </>
   );
 }
