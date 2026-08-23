@@ -1,20 +1,20 @@
-import { Cpu, Cloud, Workflow, Sparkles, CheckCircle2, ShieldCheck, Zap, Database, ArrowUpRight, Activity } from "lucide-react";
+import { Cpu, Cloud, Workflow, Sparkles, CheckCircle2, ShieldCheck, Zap, Database } from "lucide-react";
 
 export function FloatingCollage() {
   return (
-    <section className="relative w-full max-w-7xl mx-auto overflow-hidden bg-[#FAF9F5] py-28 sm:py-36 px-6 sm:px-8 lg:px-12 min-h-[950px] lg:min-h-[1100px] flex items-center justify-center border-b border-black/5">
+    <section className="relative w-full max-w-7xl mx-auto overflow-hidden bg-[#FAF9F5] py-16 sm:py-24 lg:py-36 px-6 sm:px-8 lg:px-12 min-h-0 lg:min-h-[1100px] flex flex-col lg:flex-row items-center justify-center border-b border-black/5">
       
       {/* Central Radiating Yellow Glow */}
       <div 
-        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[850px] h-[500px] sm:h-[650px] rounded-full opacity-25 blur-[120px] -z-0"
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[600px] lg:w-[850px] h-[340px] sm:h-[500px] lg:h-[650px] rounded-full opacity-25 blur-[90px] sm:blur-[120px] -z-0"
         style={{
           background: "radial-gradient(circle, rgba(254, 221, 43, 0.5) 0%, transparent 70%)",
         }}
       />
 
-      {/* Central Typography Anchor */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none select-none z-0 px-4">
-        <h2 className="font-display text-7xl sm:text-9xl md:text-[130px] lg:text-[150px] font-black text-[#111111] tracking-tighter leading-[0.88] text-center text-balance">
+      {/* Central Typography Anchor (Absolute on Desktop, Flow on Mobile) */}
+      <div className="relative lg:absolute lg:inset-0 flex flex-col justify-center items-center pointer-events-none select-none z-0 px-4 mb-10 lg:mb-0">
+        <h2 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-[150px] font-black text-[#111111] tracking-tighter leading-[0.9] lg:leading-[0.88] text-center text-balance">
           Applied<br />
           <span className="text-[#111111]">Intelligence</span>
         </h2>
@@ -160,39 +160,63 @@ export function FloatingCollage() {
 
       </div>
 
-      {/* Mobile Responsive Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative z-10 lg:hidden mt-8">
+      {/* Mobile Responsive Cards Grid (< lg) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full relative z-10 lg:hidden">
         
-        <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
-          <div className="flex items-center gap-2 mb-2">
-            <Cpu className="w-4 h-4 text-black" />
-            <span className="font-display text-xs font-bold text-[#1B1B1B]">Enterprise RAG & AI</span>
+        {/* Card 1: Enterprise RAG */}
+        <div className="rounded-3xl bg-white/85 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-[#FEDD2B] flex items-center justify-center text-black font-bold shadow-sm">
+                <Cpu className="w-3.5 h-3.5 text-black" />
+              </div>
+              <span className="font-display text-xs font-bold text-[#1B1B1B]">Enterprise RAG & AI</span>
+            </div>
+            <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#FEDD2B] text-black">99.8% Acc</span>
           </div>
-          <p className="text-xs text-[#717182]">99.8% semantic accuracy with custom open-source LLMs.</p>
+          <p className="text-xs text-[#717182] leading-relaxed">Vector search over proprietary docs with semantic re-ranking & guardrails.</p>
         </div>
 
-        <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
-          <div className="flex items-center gap-2 mb-2">
-            <Cloud className="w-4 h-4 text-sky-600" />
-            <span className="font-display text-xs font-bold text-[#1B1B1B]">Cloud Cost Optimization</span>
+        {/* Card 2: Cloud Cost Optimizer */}
+        <div className="rounded-3xl bg-white/85 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-sky-500 text-white flex items-center justify-center shadow-sm">
+                <Cloud className="w-3.5 h-3.5" />
+              </div>
+              <span className="font-display text-xs font-bold text-[#1B1B1B]">AWS & Azure FinOps</span>
+            </div>
+            <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">-42% Spend</span>
           </div>
-          <p className="text-xs text-[#717182]">-42% average cloud compute overhead savings.</p>
+          <p className="text-xs text-[#717182] leading-relaxed">Auto-scaling serverless clusters with radical compute overhead savings.</p>
         </div>
 
-        <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
-          <div className="flex items-center gap-2 mb-2">
-            <Workflow className="w-4 h-4 text-amber-600" />
-            <span className="font-display text-xs font-bold text-[#1B1B1B]">3000+ Integrations</span>
+        {/* Card 3: Live Workflow Sync */}
+        <div className="rounded-3xl bg-white/85 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-[#FF416C] to-[#FF4B2B] flex items-center justify-center text-white shadow-sm">
+                <Workflow className="w-3.5 h-3.5" />
+              </div>
+              <span className="font-display text-xs font-bold text-[#1B1B1B]">CRM & ERP Bridge</span>
+            </div>
+            <span className="text-[10px] font-medium text-emerald-600">3,400+ ev/s</span>
           </div>
-          <p className="text-xs text-[#717182]">Bi-directional CRM, ERP, and API event streams.</p>
+          <p className="text-xs text-[#717182] leading-relaxed">Bi-directional event streams connecting Zoho, HubSpot, Salesforce & DBs.</p>
         </div>
 
-        <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
-          <div className="flex items-center gap-2 mb-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span className="font-display text-xs font-bold text-[#1B1B1B]">Sovereign Security</span>
+        {/* Card 4: Sovereign Security */}
+        <div className="rounded-3xl bg-white/85 backdrop-blur-xl border border-white/90 p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center shadow-sm">
+                <ShieldCheck className="w-3.5 h-3.5" />
+              </div>
+              <span className="font-display text-xs font-bold text-[#1B1B1B]">Terraform & Security</span>
+            </div>
+            <span className="text-[9px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">SOC2 Ready</span>
           </div>
-          <p className="text-xs text-[#717182]">VPC on-premise execution with zero vendor lock-in.</p>
+          <p className="text-xs text-[#717182] leading-relaxed">Private VPC deployment for open-source LLMs with zero vendor lock-in.</p>
         </div>
 
       </div>
