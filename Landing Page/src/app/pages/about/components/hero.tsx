@@ -2,7 +2,7 @@ import { ArrowRight, Target } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="bg-zinc-900 py-24 sm:py-32 relative overflow-hidden">
+    <section className="bg-zinc-900 pt-32 sm:pt-44 pb-24 sm:pb-32 relative overflow-hidden">
       <div
         className="pointer-events-none absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full opacity-20 blur-3xl"
         style={{ background: "var(--accent-yellow)" }}

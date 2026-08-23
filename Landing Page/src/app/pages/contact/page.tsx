@@ -5,7 +5,7 @@ import { ContactInfoTimeline } from "./components/contact-info-timeline";
 
 export function ContactPage() {
   return (
-    <section id="contact" className="bg-zinc-900 py-24 sm:py-32 relative overflow-hidden">
+    <section id="contact" className="bg-zinc-900 pt-32 sm:pt-44 pb-24 sm:pb-32 relative overflow-hidden">
       <SEO
         title="Contact Us — eigen."
         description="Initiate an engineer-led architecture review for your enterprise AI, cloud, automation, or data stack."

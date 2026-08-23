@@ -81,29 +81,29 @@ export function IntegrationMarquee() {
   const thirdRow = integrations.slice(22);
 
   return (
-    <section className="overflow-hidden bg-zinc-50">
-      <div className="mx-auto max-w-3xl px-6 pt-24 text-center lg:pt-28">
-        <h2 className="text-4xl leading-tight tracking-tight text-zinc-900 sm:text-5xl">
+    <section className="overflow-hidden bg-[#FAF9F5] border-t border-b border-black/5 py-20 lg:py-24">
+      <div className="mx-auto max-w-4xl px-6 text-center">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-[#1B1B1B]">
           Seamless Integration Across Your Entire Software Stack
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-zinc-600">
-          We engineer custom middleware and iPaaS connections to sync data
-          effortlessly across your tools.
+        <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-[#717182]">
+          We engineer custom middleware, webhooks & iPaaS connections to sync data
+          effortlessly across your proprietary tools.
         </p>
       </div>
 
-      <div className="relative mt-16 space-y-5 pb-8">
+      <div className="relative mt-12 space-y-4 pb-4">
         {/* edge fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-zinc-50 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-zinc-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-[#FAF9F5] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-[#FAF9F5] to-transparent" />
         <Row items={firstRow} />
         <Row items={secondRow} reverse />
         <Row items={thirdRow} />
       </div>
 
-      <div className="pb-24 text-center lg:pb-28">
-        <p className="text-sm font-medium tracking-wide text-zinc-400">
-          + 3000 more other integration capabilities
+      <div className="text-center mt-6">
+        <p className="font-display text-xs font-semibold tracking-wider text-[#8C8880] uppercase">
+          + 3,000 more API & enterprise system integrations
         </p>
       </div>
     </section>

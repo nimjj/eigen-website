@@ -1,38 +1,40 @@
-import { Link } from "react-router";
-import { ArrowRight } from "lucide-react";
-
 export function Hero() {
   return (
-    <section className="bg-white py-20 lg:py-28 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="text-left space-y-8 max-w-5xl">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-zinc-900">
-            <span className="animate-fade-slide-up whitespace-nowrap inline-flex items-center flex-wrap sm:flex-nowrap gap-2">
-              <span>Your Focus Belongs to</span>
-              <span className="animate-bolt-expand inline-flex items-center -rotate-2 rounded-2xl bg-[var(--accent-yellow)] px-3.5 sm:px-5 py-0.5 sm:py-1 pb-1.5 sm:pb-2 shadow-md align-middle">
-                <span className="rotate-2 inline-block">Growth.</span>
-              </span>
-            </span>
-            <span className="block mt-4 text-2xl font-bold text-zinc-700 sm:text-3xl lg:text-4xl">
-              Not Infrastructure.
-            </span>
-          </h1>
+    <section className="relative min-h-[85vh] sm:min-h-[90vh] pt-[160px] sm:pt-[220px] lg:pt-[260px] pb-[80px] sm:pb-[120px] px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto flex flex-col justify-end overflow-hidden bg-[#FAF9F5]">
+      
+      {/* Surge-Inspired Radiant Ambient Lighting Backdrop */}
+      <div 
+        className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[1100px] lg:w-[1500px] h-[500px] sm:h-[700px] rounded-full opacity-35 blur-[120px] sm:blur-[160px] -z-0"
+        style={{
+          background: "radial-gradient(ellipse at center, rgba(254, 221, 43, 0.45) 0%, rgba(254, 200, 43, 0.2) 45%, rgba(250, 249, 245, 0) 75%)",
+        }}
+      />
+      
+      <div 
+        className="pointer-events-none absolute -right-[150px] top-[120px] w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] rounded-full opacity-20 blur-[130px] -z-0"
+        style={{
+          background: "radial-gradient(circle, rgba(254, 221, 43, 0.5) 0%, transparent 70%)",
+        }}
+      />
 
-          <p className="text-lg sm:text-xl leading-relaxed text-zinc-600 max-w-4xl">
-            Managing disparate platforms and scaling internal tech takes your eyes off what actually matters. <strong className="font-bold text-zinc-900">Your product.</strong> That's where we step in. We drive company connectivity and scale by engineering custom AI orchestration, robust cloud infrastructure & seamless platform integrations. <strong className="font-semibold text-zinc-900">So your tools work for you, not against you.</strong>
-          </p>
+      {/* Main Content Anchored Lower Down (Surge Style) */}
+      <div className="relative z-10 w-full max-w-[1520px] mx-auto text-left mt-auto">
+        
+        {/* Massive Editorial Headline */}
+        <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-[96px] xl:text-[115px] font-extrabold tracking-tight text-[#1B1B1B] leading-[1.02] text-balance">
+          Your Focus Belongs to{" "}
+          <span className="relative inline-block">
+            Growth.
+            <span className="absolute -bottom-2 sm:-bottom-3 left-0 w-full h-3 sm:h-4 bg-[#FEDD2B] -z-10 rounded-full opacity-70"></span>
+          </span>
+          <span className="block mt-2 sm:mt-4 text-[#1B1B1B]">
+            Not Infrastructure.
+          </span>
+        </h1>
 
-          <div className="pt-2">
-            <Link
-              to="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-8 py-4 text-base font-bold text-zinc-900 shadow-lg shadow-yellow-500/10 transition-all duration-300 hover:bg-[var(--accent-yellow-hover)] hover:scale-105"
-            >
-              Ready to feel the energy?
-              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </Link>
-          </div>
-        </div>
       </div>
     </section>
   );
 }
+
+

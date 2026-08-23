@@ -1,10 +1,11 @@
 import { SEO } from "../../components/seo";
 import { Hero } from "../../components/hero";
-import { BentoGrid } from "../../components/bento-grid";
 import { IntegrationMarquee } from "../../components/integration-marquee";
+import { FloatingCollage } from "../../components/floating-collage";
+import { BentoGrid } from "../../components/bento-grid";
+import { SolutionsShowcase } from "../../components/solutions-showcase";
 import { TechStack } from "../../components/tech-stack";
-import { Mandate } from "../../components/mandate";
-import { FinalCTA } from "../../components/final-cta";
+import { Testimonial } from "../../components/testimonial";
 
 export function HomePage() {
   return (
@@ -15,11 +16,13 @@ export function HomePage() {
         canonical="https://ei-gen.tech/"
       />
       <Hero />
-      <BentoGrid />
       <IntegrationMarquee />
+      <FloatingCollage />
+      <BentoGrid />
+      <SolutionsShowcase />
       <TechStack />
-      <Mandate />
-      <FinalCTA />
+      <Testimonial />
     </>
   );
 }
+

@@ -1,29 +1,56 @@
-import { Link } from "react-router";
-import { ArrowRight } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-zinc-900 pt-32 pb-24 lg:pt-48 lg:pb-32">
-      <div
-        className="pointer-events-none absolute left-1/2 top-0 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-3xl"
-        style={{ background: "var(--accent-yellow)" }}
+    <section className="relative min-h-screen w-full flex flex-col justify-end overflow-hidden bg-[#0A0A0A] pt-32 pb-24 sm:pb-32 px-6 sm:px-8 lg:px-12 text-left">
+      {/* White Grid / Check Lines Pattern */}
+      <div 
+        className="pointer-events-none absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)
+          `,
+          backgroundSize: "48px 48px",
+          maskImage: "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)",
+        }}
       />
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 text-center">
-        <h1 className="mx-auto max-w-4xl text-5xl font-medium tracking-tight text-white sm:text-7xl">
-          Intelligence Engineered for Impact, Not Hype.
+
+      {/* Yellow Glowing Ambient Lighting Orbs */}
+      <div 
+        className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[850px] h-[500px] sm:h-[650px] rounded-full opacity-25 blur-[140px] -z-0"
+        style={{
+          background: "radial-gradient(circle, rgba(254, 221, 43, 0.5) 0%, transparent 70%)",
+        }}
+      />
+      <div 
+        className="pointer-events-none absolute right-10 top-1/4 w-[400px] sm:w-[500px] h-[400px] rounded-full opacity-15 blur-[120px] -z-0"
+        style={{
+          background: "radial-gradient(circle, rgba(254, 221, 43, 0.45) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Main Content (Left Aligned, anchored low) */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start text-left">
+        {/* Section Pill Badge */}
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white/80 mb-6 backdrop-blur-md shadow-sm">
+          <Cpu className="h-3.5 w-3.5 text-[#FEDD2B]" />
+          <span className="font-display font-medium tracking-wide">AI Orchestration & LLM Solutions</span>
+        </div>
+
+        {/* Headline */}
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.08] text-balance max-w-5xl text-left">
+          Intelligence Engineered for{" "}
+          <span className="text-[#FEDD2B] drop-shadow-[0_4px_30px_rgba(254,221,43,0.3)]">
+            Impact, Not Hype.
+          </span>
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400">
+
+        {/* Paragraph */}
+        <p className="mt-6 max-w-3xl text-base sm:text-xl leading-relaxed text-zinc-400 text-balance text-left">
           We build sovereign, custom AI architectures that optimize workflows and eliminate enterprise bloat—moving far beyond basic API wrappers.
         </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-yellow)] px-7 py-4 text-sm font-medium text-zinc-900 shadow-sm transition-all hover:bg-[var(--accent-yellow-hover)]"
-          >
-            Review AI architecture
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
       </div>
     </section>
   );
