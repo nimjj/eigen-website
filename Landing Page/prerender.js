@@ -60,6 +60,7 @@ for (const [url, meta] of Object.entries(routeMeta)) {
 
   // Replace Title & Description in pre-rendered static HTML
   html = html.replace(/<title>.*?<\/title>/, `<title>${meta.title}</title>`);
+  html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${meta.canonical}" />`);
   html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${meta.description}" />`);
   html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${meta.title}" />`);
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${meta.description}" />`);

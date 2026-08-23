@@ -2,5 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ei-gen.tech/sitemap.xml
 Sitemap: https://ei-gen.tech/sitemap.xml
