@@ -22,14 +22,17 @@ const services: ServiceItem[] = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
   const mobileRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+  const lastScrollY = useRef(0);
 
   // Close menus on route change
   useEffect(() => {
     setOpen(false);
     setMobileOpen(false);
+    setVisible(true);
   }, [location.pathname, location.hash]);
 
   // Handle outside clicks
@@ -46,8 +49,47 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  // Smart Hide on Scroll Down, Reveal on Scroll Up
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+
+          // Always visible at the top of the page
+          if (currentScrollY < 40) {
+            setVisible(true);
+          } else if (currentScrollY > lastScrollY.current + 8) {
+            // Scrolling DOWN -> Hide header
+            if (!mobileOpen) {
+              setVisible(false);
+              setOpen(false);
+            }
+          } else if (currentScrollY < lastScrollY.current - 8) {
+            // Scrolling UP -> Show header
+            setVisible(true);
+          }
+
+          lastScrollY.current = currentScrollY;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [mobileOpen]);
+
   return (
-    <header className="fixed top-5 left-0 right-0 z-50 flex items-center justify-center px-4 w-full pointer-events-none" ref={mobileRef}>
+    <header
+      className={`fixed top-5 left-0 right-0 z-50 flex items-center justify-center px-4 w-full pointer-events-none transition-all duration-300 ease-in-out ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-28 opacity-0"
+      }`}
+      ref={mobileRef}
+    >
       <div className="pointer-events-auto w-full max-w-[840px] flex items-center justify-between bg-[#151515]/95 backdrop-blur-2xl rounded-full px-4 sm:px-6 py-2 shadow-[0_16px_40px_rgba(0,0,0,0.25)] border border-white/15 h-[68px] sm:h-[72px] transition-all duration-300">
         
         {/* Left: Brand Logo & Desktop Links */}
