@@ -111,9 +111,6 @@ export function TechStack() {
         
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <span className="font-display text-xs font-bold uppercase tracking-widest text-black mb-3 block bg-[#FEDD2B]/40 px-3.5 py-1 rounded-full border border-yellow-400/50 shadow-sm mx-auto w-max">
-            Battle-Tested Tooling
-          </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-[#1B1B1B]">
             Production-Grade Engineering Stack
           </h2>

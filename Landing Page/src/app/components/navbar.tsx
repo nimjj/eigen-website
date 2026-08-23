@@ -111,13 +111,6 @@ export function Navbar() {
                 </div>
               )}
             </div>
-
-            <Link
-              to="/#ecosystem"
-              className="text-xs font-semibold uppercase tracking-wider text-white/70 hover:text-white transition-colors duration-200"
-            >
-              Ecosystem
-            </Link>
           </nav>
         </div>
 
@@ -156,13 +149,6 @@ export function Navbar() {
               className="text-sm font-semibold py-2 hover:text-[#FEDD2B] transition-colors"
             >
               About Us
-            </Link>
-            <Link
-              to="/#ecosystem"
-              onClick={() => setMobileOpen(false)}
-              className="text-sm font-semibold py-2 hover:text-[#FEDD2B] transition-colors"
-            >
-              Ecosystem
             </Link>
           </div>
 

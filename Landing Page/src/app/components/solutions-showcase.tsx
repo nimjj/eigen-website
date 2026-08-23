@@ -64,9 +64,6 @@ export function SolutionsShowcase() {
   return (
     <section className="py-24 sm:py-32 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto bg-[#FAF9F5] flex flex-col items-center">
       
-      <span className="font-display text-xs font-bold uppercase tracking-widest text-black mb-3 block text-center bg-[#FEDD2B]/40 px-3.5 py-1 rounded-full border border-yellow-400/50 shadow-sm">
-        Tailored Architectures
-      </span>
       <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-center text-[#1B1B1B] mb-8">
         Built for every enterprise team.
       </h2>

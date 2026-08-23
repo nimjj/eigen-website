@@ -14,9 +14,6 @@ export function FloatingCollage() {
 
       {/* Central Typography Anchor */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none select-none z-0 px-4">
-        <span className="font-display text-xs sm:text-sm font-bold tracking-widest text-black uppercase mb-4 bg-[#FEDD2B] px-4 py-1.5 rounded-full border border-black/15 shadow-sm">
-          Enterprise Systems & Architecture
-        </span>
         <h2 className="font-display text-7xl sm:text-9xl md:text-[130px] lg:text-[150px] font-black text-[#111111] tracking-tighter leading-[0.88] text-center text-balance">
           Applied<br />
           <span className="text-[#111111]">Intelligence</span>

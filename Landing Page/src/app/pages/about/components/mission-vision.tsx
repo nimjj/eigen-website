@@ -2,7 +2,7 @@ import { Compass, Eye } from "lucide-react";
 
 export function MissionVision() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white pt-20 sm:pt-28 pb-6 sm:pb-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
