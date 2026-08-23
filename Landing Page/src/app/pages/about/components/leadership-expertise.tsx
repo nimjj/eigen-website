@@ -2,11 +2,11 @@ import { CheckCircle2, Award, Terminal, Code2 } from "lucide-react";
 
 export function LeadershipExpertise() {
   return (
-    <section className="bg-zinc-900 py-24 sm:py-32 border-t border-zinc-800/80 relative">
+    <section className="bg-white py-24 sm:py-32 border-t border-zinc-200 relative">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
-          {/* Left Column: Grayscale Technical Visual Placeholder */}
+          {/* Left Column: Dark Technical Visual Card */}
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl border border-zinc-800 bg-zinc-950 p-8 sm:p-10 shadow-2xl overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-zinc-900/60 to-zinc-800/20 opacity-80" />
@@ -44,33 +44,33 @@ export function LeadershipExpertise() {
 
           {/* Right Column: Copy & Details */}
           <div className="lg:col-span-6 space-y-6">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent-yellow)]">
+            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
               Leadership & Technical Rigor
             </p>
 
-            <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-medium tracking-tight text-zinc-900 sm:text-4xl">
               Built on Deep Technical Rigor.
             </h2>
 
-            <p className="text-base sm:text-lg text-zinc-400 leading-relaxed">
-              Led by <strong className="text-white font-semibold">Nimithra Jayakody</strong>. We blend applied data analytics, machine learning, and enterprise platform orchestration to deliver solutions that drive immediate, measurable ROI.
+            <p className="text-base sm:text-lg text-zinc-600 leading-relaxed">
+              Led by <strong className="text-zinc-900 font-semibold">Nimithra Jayakody</strong>. We blend applied data analytics, machine learning, and enterprise platform orchestration to deliver solutions that drive immediate, measurable ROI.
             </p>
 
-            <p className="text-base text-zinc-400 leading-relaxed">
+            <p className="text-base text-zinc-600 leading-relaxed">
               From high-volume data extraction pipelines to custom tracking dashboards, we architect systems that simply work.
             </p>
 
             <div className="space-y-3 pt-2">
-              <div className="flex items-center gap-3 text-sm text-zinc-300">
-                <CheckCircle2 className="h-5 w-5 text-[var(--accent-yellow)] shrink-0" />
+              <div className="flex items-center gap-3 text-sm text-zinc-700">
+                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0" />
                 <span>Zero-vendor-lockin modular architecture</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-zinc-300">
-                <CheckCircle2 className="h-5 w-5 text-[var(--accent-yellow)] shrink-0" />
+              <div className="flex items-center gap-3 text-sm text-zinc-700">
+                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0" />
                 <span>Proven high-throughput enterprise pipelines</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-zinc-300">
-                <CheckCircle2 className="h-5 w-5 text-[var(--accent-yellow)] shrink-0" />
+              <div className="flex items-center gap-3 text-sm text-zinc-700">
+                <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0" />
                 <span>Continuous 24/7 monitoring and SLAs</span>
               </div>
             </div>
